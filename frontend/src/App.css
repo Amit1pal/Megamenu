@@ -52,6 +52,17 @@ li{
 .desktop-nav{
   width: 60%;
 }
+.desktop-nav .dropdown {
+ display: none;
+  position: absolute;
+    padding: 0px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+ }
+ .dropdown.show{
+  display: block !important;
+ }
 .desktop-nav .menus{
   display: flex;
   gap: 5%;
@@ -65,6 +76,9 @@ li{
 .menu-items::marker{
   display: none;
   content: '';
+}
+.menu-items{
+  position: relative;
 }
 /* Responsive design: stack menu items vertically on small screens */
 @media (max-width: 768px) {
