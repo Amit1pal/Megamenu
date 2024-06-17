@@ -1,0 +1,87 @@
+
+/* css for header */
+/* General styles for the header */
+header {
+  background-color: #282c34;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the navigation area */
+.nav-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for the logo */
+.logo {
+  text-decoration: none;
+  color: #61dafb;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Container for the Navbar items */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* General styles for the navbar links */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+/* Styles for hover and active states of navbar links */
+.navbar a:hover,
+.navbar a:focus {
+  background-color: #61dafb;
+  color: #282c34;
+  outline: none;
+}
+
+li{
+  text-decoration: none;
+}
+.desktop-nav{
+  width: 60%;
+}
+.desktop-nav .menus{
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+.menu-items a{
+  text-decoration: none;
+}
+.menu-items::marker{
+  display: none;
+  content: '';
+}
+/* Responsive design: stack menu items vertically on small screens */
+@media (max-width: 768px) {
+  .nav-area {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar a {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+
+/*  */
